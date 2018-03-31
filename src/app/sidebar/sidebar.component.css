@@ -1,0 +1,339 @@
+/*
+    DEMO STYLE
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+img {
+    width: auto;
+    max-width: 100%;
+}
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+}
+
+.navbar-btn {
+   -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+    position: fixed;
+    right: 30px;
+    top: 33px;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+.btn-info, .btn-info:active:hover, .btn-info:active:hover {
+    background: transparent;
+}
+.btn-info span {
+    padding: 6px;
+    display: inline-block;
+    background: #fff;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.btn-info span:nth-child(2) {
+    padding: 5px;
+    border-radius: 0;
+    height: 40px;
+    margin-left: 9px;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 400px;
+    max-width: 400px;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-right: -400px;
+}
+
+
+#sidebar li {
+    padding: 10px 0;
+}
+#sidebar ul {
+    margin-top: 160px;
+    margin-right: 45px;
+}
+#sidebar ul li a {
+    padding: 10px;
+    display: block;
+}
+#sidebar ul li a:hover {
+    background: transparent;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    background: transparent;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article, a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    padding: 20px 20px 0 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    width: 100%;
+}
+.wrapper {
+    overflow: hidden;
+}
+
+.chat {
+    font-size: 23px;
+    font-weight: 600;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: fixed;
+    right: -9px;
+    top: 204px;
+}
+
+
+
+
+/*contact-wrapper*/
+.contact-wrapper ul {
+    margin: 0;
+}
+.contact-wrapper li {
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    display: inline-block;
+    margin: 0 20px 20px 0;
+}
+.contact-wrapper li:last-child{
+    margin: 0 0 20px 0;
+}
+.contact-wrapper li.cl{
+    border-radius: 50%;
+}
+.contact-wrapper-2 {
+    width: 812px;
+    margin: 141px auto 0;
+}
+.contact-wrapper-2 {
+    display: none;
+}
+.count .contact-wrapper-2 {
+    display: block;
+}
+.count .contact-wrapper-2 ul {
+    padding: 0;
+    margin: 0;
+}
+.count .contact-wrapper-2 li {
+    width: 10px;
+    height: 10px;
+    margin: 0 17px 17px 0;
+    list-style: none;
+    display: inline-block;
+}
+.count .contact-wrapper-2 li:last-child{
+    margin: 0 0 17px 0;
+}
+.count .contact-wrapper {
+    display: none;
+}
+.count footer {
+    display: none;
+}
+.screen2-wrapper .alter {
+    margin-right: 0;
+}
+#content.alter.count {
+    display:block;
+}
+
+
+.bat-wrapper {
+    font-size: 23px;
+    font-weight: 600;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: fixed;
+    right: -15px;
+    top: 299px;
+}
+.bat-wrapper label {
+    font-size: 23px;
+    font-weight: 600;
+    padding: 0px 5px;
+
+}
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width:1230px) { 
+    #sidebar {
+        min-width: 250px;
+        max-width: 256px;
+    }
+}
+@media (max-width:1024px) { 
+    .contact-wrapper-2 {
+        width: 625px;
+    }
+    .count .contact-wrapper-2 li {
+        margin: 0 10px 10px 0;
+    }
+}
+@media (max-width:900px) {
+    .contact-wrapper-2 {
+        width: 495px;
+    }
+    .count .contact-wrapper-2 li {
+        margin: 0 5px 5px 0;
+        font-size: 10px;
+    }
+}
+@media (max-width: 768px) {
+  /*  #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }*/
+    #sidebar .collapse {
+        display: block;
+    }
+    .navbar-btn {
+        right: 6px;
+        top: 3px;
+    }
+    #sidebar ul {
+        margin-top: 143px;
+    }
+    .contact-wrapper-2 {
+        width: 387px;
+        margin: 81px auto 0;
+    }
+    
+    .count .contact-wrapper-2 li {
+        width: 6px;
+    }
+    #sidebar {
+        min-width: 173px;
+        max-width: 173px;
+    }
+    #sidebar li {
+        padding: 0;
+    } #sidebar a {
+        padding: 10px 0 !important;
+    }
+    #sidebar ul {
+        margin-top: 80px;
+    }
+}
+@media (max-width: 640px) {
+   .count .contact-wrapper-2 ul {
+    height: 15px;
+   } 
+   .count .contact-wrapper-2 li {
+        margin: 0 2px 2px 0;
+    }
+    .contact-wrapper-2 {
+        width: 310px;
+    }
+}
+@media (max-width: 525px) {
+    #sidebar {
+        min-width: 220px;
+        max-width: 220px;
+        margin-left: -68%;
+    }
+    .contact-wrapper-2 {
+        margin: 279px auto 0;
+    }
+}
+@media (max-width: 480px) {
+    #sidebar {
+        min-width: 220px;
+        max-width: 220px;
+        margin-left: -75%;
+    }
+    .count .contact-wrapper-2 li {
+        margin: 0 1px 1px 0;
+    }
+}
