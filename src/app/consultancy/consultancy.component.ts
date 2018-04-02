@@ -10,34 +10,28 @@ import { Observable } from 'rxjs/Rx';
   encapsulation: ViewEncapsulation.None,
 })
 export class ConsultancyComponent implements OnInit {
-	public consultancyData:any;
+  public consultancyData:any;
   constructor(public service :DataService) { }
 
   ngOnInit() {
-  	this.getConsultancyData();
+    this.getConsultancyData();
   }
   english(){
-    console.log("English");
    localStorage.setItem('lang',JSON.stringify('en'));
    this.getConsultancyData();
   }
   spanish(){
-    console.log("English");
    localStorage.setItem('lang',JSON.stringify('es'));
    this.getConsultancyData();
   }
   getConsultancyData() {
-  		this.service.consultancy().subscribe( (data: any)=> {
-  			console.log(data);
-  			this.consultancyData = data.Description;
+      this.service.consultancy().subscribe( (data: any)=> {
+        this.consultancyData = data.Description;
 
-   		},
-  		err =>{
-  			console.log(err,"err")
-  		},
-  		()=> {
-  			console.log("done!");
-  		})
-  	}
+       },
+      err =>{
+        console.log(err,"err")
+      })
+    }
 
 }

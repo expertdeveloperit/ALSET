@@ -10,7 +10,7 @@
     width: 100%;
 }
 .header-img {
-	height: 30px;
+    height: 30px;
     position: fixed;
     top: 49px;
     right: 101px;
@@ -78,7 +78,9 @@
     .right-img-section {
         text-align: center;
     }
-
+    #myVideo {
+        width: auto;
+    }
 }
 @media (max-width: 767px) {
     .header-img {

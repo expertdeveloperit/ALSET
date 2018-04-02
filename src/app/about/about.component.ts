@@ -10,11 +10,11 @@ import {Observable} from 'rxjs/Rx';
   encapsulation: ViewEncapsulation.None,
 })
 export class AboutComponent implements OnInit {
-	public about:string;
+  public about:string;
   constructor(public service :DataService) { }
 
   ngOnInit() {
-  	this.getaboutData();
+    this.getaboutData();
   }
   english(){
     console.log("English");
@@ -28,19 +28,19 @@ export class AboutComponent implements OnInit {
   }
 
   getaboutData() {
-  		this.service.about().subscribe( (data: any) => {
+      this.service.about().subscribe( (data: any) => {
         if(data){
-    			console.log(data);
+          console.log(data);
           this.about = data.Description;
           console.log(this.about,"about");
         }
-  		},
-  		err =>{
-  			console.log(err,"err")
-  		},
-  		()=> {
-  			console.log("done!");
-  		})
-  	}
+      },
+      err =>{
+        console.log(err,"err")
+      },
+      ()=> {
+        console.log("done!");
+      })
+    }
 
 }

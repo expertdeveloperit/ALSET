@@ -1,5 +1,5 @@
 <div class="wrapper">
-	<!-- Page Content Holder -->
+  <!-- Page Content Holder -->
     <div id="content">
         <!-- Header -->
         <app-header></app-header>
@@ -11,14 +11,14 @@
         <!-- content for contact page -->
         
         <div class="content1">
-	    	<div class="container acerca">
-	    		<div class="col-xs-12 col-md-6">
-	    			<div class="screen-2" [innerHTML] = "contact"></div>
-	    		</div>
+        <div class="container acerca contact-acerca">
+          <div class="col-xs-12 col-md-6">
+            <div class="screen-2" [innerHTML] = "contact"></div>
+          </div>
 
                 <!-- Contact Form -->
 
-	    		<div class="col-xs-12 col-md-6 text-right right-img-contact">
+          <div class="col-xs-12 col-md-6 text-right right-img-contact">
                     <form class="form-horizontal"
                    #contactForm = "ngForm" (ngSubmit) = "contactus(contactForm.value);contactForm.reset()" ngNativeValidate>
                        <div class="form-group">
@@ -34,13 +34,13 @@
                            <button class="submit" class="btn">enviar</button>
                        </div>
                    </form>
-	    		</div>
-	    	</div>
-	    </div>
+          </div>
+        </div>
+      </div>
 
         <!-- Footer Area -->
 
-	    <footer>
+      <footer>
             <img src="../assets/images/footer-1.png">
         </footer>
     </div>

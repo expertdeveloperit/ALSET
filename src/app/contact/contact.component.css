@@ -10,7 +10,7 @@
     width: 100%;
 }
 .header-img {
-	height: 30px;
+    height: 30px;
     position: fixed;
     top: 49px;
     right: 101px;
@@ -95,6 +95,11 @@ footer {
         margin: auto;
     }
 }
+@media (max-width: 1200px) {
+     #myVideo {
+        width: auto;
+    }
+}
 @media (min-width: 1080px) { 
     footer ul {
         padding: 0;
@@ -114,11 +119,13 @@ footer {
     footer {
         text-align: center;
         padding: 20px 20px 0 20px;
+        margin-bottom: 0;
     }
     footer img {
         max-width: 100%;
         width: auto;
     }
+
 }
 @media (max-width: 768px) {
     .header-img {
@@ -131,4 +138,12 @@ footer {
     .content1 {
         margin: 70px 0;
     }
+    .contact-acerca {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 480px) {
+    .contact-acerca {
+    padding: 0 25px;
+}
 }

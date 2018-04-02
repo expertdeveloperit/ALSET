@@ -10,7 +10,7 @@
     width: 100%;
 }
 .header-img {
-	height: 30px;
+    height: 30px;
     position: fixed;
     top: 49px;
     right: 101px;
@@ -70,6 +70,7 @@
         width: auto;
         max-width: 100%;
     }
+
     .right-img-section {
         text-align: center;
         height: auto;
@@ -85,5 +86,10 @@
     }
     .content1 {
         margin: 70px 0;
+    }
+}
+@media only screen and (max-width: 1200px) {    
+    #myVideo {
+      width: auto;
     }
 }

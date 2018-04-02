@@ -158,7 +158,7 @@ a.article, a.article:hover {
 }
 
 .chat {
-	font-size: 23px;
+    font-size: 23px;
     font-weight: 600;
     transform: rotate(-90deg);
     display: inline-block;
@@ -172,37 +172,37 @@ a.article, a.article:hover {
 
 /*contact-wrapper*/
 .contact-wrapper ul {
-	margin: 0;
+    margin: 0;
 }
 .contact-wrapper li {
-	width: 7px;
-	height: 7px;
-	background: #fff;
-	display: inline-block;
-	margin: 0 20px 20px 0;
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    display: inline-block;
+    margin: 0 20px 20px 0;
 }
 .contact-wrapper li:last-child{
-	margin: 0 0 20px 0;
+    margin: 0 0 20px 0;
 }
 .contact-wrapper li.cl{
-	border-radius: 50%;
+    border-radius: 50%;
 }
 .contact-wrapper, .contact-wrapper-2 {
     width: 850px;
     margin: 90px auto 0;
 }
 .count .contact-wrapper, .contact-wrapper-2 {
-	display: none;
+    display: none;
 }
 #content.count{
     /*width: auto;*/
     display: none;
 }
 .count .contact-wrapper {
-	display: none;
+    display: none;
 }
 .count footer {
-	display: none;
+    display: none;
 }
 .menu-wrapper .sidebar-wrapper {
     width: 100%;
@@ -210,7 +210,7 @@ a.article, a.article:hover {
 
 
 footer {
-	text-align: center;
+    text-align: center;
     margin-top:61px;
 }
 
@@ -241,6 +241,9 @@ footer {
 @media (max-width: 992px) {
     .contact-wrapper{
           width: 544px;
+    }
+    #myVideo {
+        width: auto;
     }
     .contact-wrapper ul {
         padding: 0;
