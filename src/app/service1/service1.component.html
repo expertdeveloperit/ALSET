@@ -7,51 +7,76 @@
             <label class=" sp" (click)="spanish()">Spanish</label>
         </div>
         <div class="content1">
-	    	<div class="container acerca">
-	    		<div class="col-xs-12 col-md-6">
-	    			<p>{{para1}}</p>	
-	    		</div>
-	    		<div class="col-xs-12 col-md-6 text-right right-img-section">
-	    			<img  src="../assets/images/service2.jpg">
-	    		</div>
-	    	</div>
-	    </div>
-	     <footer>
-	    	<div class="col-xs-6">
-	    		<ul>
+        	<div class="col-xs-2 footer">
+	    		<ul class="footer-left">
 	    			<li>
 	    				<a routerLink="/services">
-	    					<img src="../assets/images/service1.jpg">
+	    					<img src="../assets/images/service1.png">
 	    				</a>
 	    			</li>
 	    			<li>
-	    				<img src="../assets/images/services-1.jpg">
+	    				<img src="../assets/images/services-1.png">
 	    			</li>
 	    		</ul>
 	    	</div>
-	    	<div class="col-xs-6 text-right">
-	    		<ul>
+    		<div class="col-xs-12 col-md-4 acerca">
+    			<p>{{para1}}</p>	
+    		</div>
+    		<div class="col-xs-12 col-md-4 acerca text-center right-img-section">
+    			<img  src="../assets/images/service2.png">
+	    	</div>
+	    	<div class="col-xs-6 text-right footer">
+	    		<ul class="footer-right">
 	    			<li>
 	    				<a routerLink="/service2">
-	    					<img src="../assets/images/sidefooter-(1).jpg">
+	    					<img src="../assets/images/sidefooter-(1).png">
 	    				</a>
 	    			</li>
 	    			<li>
 	    				<a routerLink="/service3">
-	    					<img src="../assets/images/sidefooter-(2).jpg">
+	    					<img src="../assets/images/sidefooter-(2).png">
 	    				</a>
 	    			</li>
 	    			<li>
 	    				<a routerLink="/service4">
-	    					<img src="../assets/images/sidefooter-(3).jpg">
+	    					<img src="../assets/images/sidefooter-(3).png">
 	    				</a>
 	    			</li>
 	    		</ul>
 	    	</div>
-	    </footer>
+	    </div>
+	     <div class="mobile-footer">
+	    	<ul class="footer-right">
+    			<li>
+    				<a routerLink="/services">
+    					<img src="../assets/images/service1.png">
+    				</a>
+    			</li>
+    			<li>
+    				<img src="../assets/images/services-1.png">
+    			</li>
+    			<li>
+	    				<a routerLink="/service2">
+	    					<img src="../assets/images/sidefooter-(1).png">
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a routerLink="/service3">
+	    					<img src="../assets/images/sidefooter-(2).png">
+	    				</a>
+	    			</li>
+	    			<li>
+	    				<a routerLink="/service4">
+	    					<img src="../assets/images/sidefooter-(3).png">
+	    				</a>
+	    			</li>
+    		</ul>
+	    </div>
     </div>
     <img class="header-img" src="../assets/images/menu-2.png">
-
+     <video autoplay muted loop id="myVideo">
+        <source src="./assets/video/video.mp4" type="video/mp4">
+    </video>
 
     <app-sidebar class="sidebar-wrapper"></app-sidebar>
 </div>

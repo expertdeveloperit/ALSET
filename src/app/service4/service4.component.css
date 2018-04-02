@@ -10,10 +10,80 @@
     width: 100%;
 }
 .header-img {
-	height: 30px;
+    height: 30px;
     position: fixed;
     top: 49px;
     right: 101px;
+}
+.content1 {
+    margin: 150px 0;  
+}
+.content1 p {
+    font-size: 16px;
+    color: #666;
+    line-height: 25px;
+}
+.right-img-section {
+    height: 300px;
+}
+.count .acerca {
+    display: none;
+}
+/*============================Video=========================================*/
+#myVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+.footer ul {
+    padding: 0;
+    margin: 0;
+}
+.mobile-footer {
+    display: none;
+    text-align: center;
+}
+.footer li {
+    display: inline-block;
+    vertical-align: bottom;
+}  
+.count footer {
+    display: none;
+}
+.footer-left {
+    position: fixed;
+    bottom: 0;
+    left: 60px;
+}
+.mobile-footer .footer-right li {
+    display: inline-block;
+}
+.footer-right {
+    position: fixed;
+    bottom: 0;
+    right: 60px;
+}
+.content1 img {
+    top: 0;
+    transform: none;
+}
+.clar:after {
+    display: block;clear: both;content: "";
+}
+#content .mobile-footer .footer-right {
+    padding: 0;
+    margin: 0;
+    position: sticky;
+}
+.menu-wrapper .sidebar-wrapper {
+    width: 100%;
+}
+#content.count {
+    /*width: auto;*/
+    display: none;
 }
     /*==================Label===========================*/
 .bat-wrapper {
@@ -32,46 +102,21 @@
     padding: 0px 5px;
     cursor: pointer;
 }
-.content1 {
-    margin: 150px 0;  
-}
-.content1 p {
-    font-size: 16px;
-    color: #666;
-    line-height: 25px;
-}
-.right-img-section {
-    height: 300px;
-}
-.count .acerca {
-    display: none;
-}
-footer ul {
-    padding: 0;
-    margin: -48px 0 0 0;
-} 
-footer li {
-    display: inline-block;
-    vertical-align: bottom;
-}
-.count footer {
-    display: none;
-}
-.menu-wrapper .sidebar-wrapper {
-    width: 100%;
-}
-#content.count {
-    width: auto;
-    display: none;
-}
 .screen-2 a, .screen-2 b {
     color: #fff !important;
 }
-@media (min-width: 1080px) { 
-    footer ul {
-        padding: 0;
-        margin: -248px 0 0 0;
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {    
+    #myVideo {
+      width: auto;
     }
+}
+@media (min-width: 1080px) { 
+    
 }
 @media (max-width: 992px) {
     .content1 img {
@@ -82,11 +127,11 @@ footer li {
         text-align: center;
         height: auto;
     }
-    footer {
-        margin-bottom: 30px;
+    .footer {
+        display: none;
     }
-    .content1 {
-        margin: 70px 0;
+    .mobile-footer {
+        display: block;
     }
 }
 @media (max-width: 768px) {
@@ -96,6 +141,9 @@ footer li {
         margin: auto;
         left: 0;
         top: 80px;
+    }
+    .content1 .container {
+        width: 100%;
     }
     .content1 {
         margin: 70px 0;

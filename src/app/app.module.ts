@@ -6,29 +6,29 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
-import { Screen1Component } from './screen1/screen1.component';
-import { Screen2Component } from './screen2/screen2.component';
-import { Screen3Component } from './screen3/screen3.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { DataService } from './data.service';
-import { Screen4Component } from './screen4/screen4.component';
-import { Screen5Component } from './screen5/screen5.component';
 import { Service2Component } from './service2/service2.component';
 import { Service3Component } from './service3/service3.component';
 import { Service4Component } from './service4/service4.component';
 import { Service1Component } from './service1/service1.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { ConsultancyComponent } from './consultancy/consultancy.component';
+import { ServicesComponent } from './services/services.component';
 
 
 
 const routes: Routes = [
  {
    path: '', 
-   component: Screen1Component
+   component: HomeComponent
   },
   {
     path:'about',
-    component: Screen2Component
+    component: AboutComponent
   },
   {
     path:'header',
@@ -40,7 +40,7 @@ const routes: Routes = [
   },
   {
     path:'services',
-    component:Screen3Component
+    component:ServicesComponent
   },
   {
     path:'service1',
@@ -60,11 +60,11 @@ const routes: Routes = [
   },
   {
     path:'consultancy',
-    component:Screen4Component
+    component:ConsultancyComponent
   },
   {
     path:'contact',
-    component:Screen5Component
+    component:ContactComponent
   }
  
 ];
@@ -72,17 +72,17 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    Screen1Component,
-    Screen2Component,
-    Screen3Component,
     SidebarComponent,
     HeaderComponent,
-    Screen4Component,
-    Screen5Component,
     Service2Component,
     Service3Component,
     Service4Component,
-    Service1Component
+    Service1Component,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    ConsultancyComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

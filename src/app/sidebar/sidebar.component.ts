@@ -30,7 +30,18 @@ export class SidebarComponent implements OnInit {
         
         $("#sidebarCollapse").trigger('click');
       }
-    })
+    });
+
+    // $(".english").click(function(){
+    //   console.log("English");
+    //    localStorage.setItem('lang',JSON.stringify('en'));
+
+    //  });
+
+    // $(".spanish").click(function(){
+    //   console.log("Spanish");
+    //    localStorage.setItem('lang',JSON.stringify('es'));
+    // })
   }
 
 }

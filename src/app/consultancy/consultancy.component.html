@@ -1,0 +1,27 @@
+<!-- <==========================Consultancy Page==================================================>-->
+<div class="wrapper">
+	<!-- Page Content Holder -->
+    <div id="content">
+        <app-header></app-header>
+        <div class="bat-wrapper">
+            <label class=" en" (click)="english()">English</label>
+            <label class=" sp" (click)="spanish()">Spanish</label>
+        </div>
+        <div class="content1">
+	    	<div class="container acerca">
+	    		<div class="col-xs-12 col-md-6">
+	    			<div class="screen-2" [innerHTML] = "consultancyData"></div>
+	    		</div>
+	    		<div class="col-xs-12 col-md-6 text-right right-img-section">
+	    			<img src="../assets/images/image2.png">
+	    		</div>
+	    	</div>
+	    </div>
+    </div>
+    <img class="header-img" src="../assets/images/menu-3.png">
+     <video autoplay muted loop id="myVideo">
+        <source src="./assets/video/video.mp4" type="video/mp4">
+    </video>
+
+    <app-sidebar class="sidebar-wrapper"></app-sidebar>
+</div>
