@@ -18,28 +18,22 @@ export class ServicesComponent implements OnInit {
   }
 
   english(){
-    console.log("English");
    localStorage.setItem('lang',JSON.stringify('en'));
    this.getServiceData();
   }
   spanish(){
-    console.log("English");
    localStorage.setItem('lang',JSON.stringify('es'));
    this.getServiceData();
   }
 
   getServiceData() {
   		this.service.services().subscribe( data=> {
-  			console.log(data);
   			this.para = data[0].Description;
   			
   			 			
   		},
   		err =>{
   			console.log(err,"err")
-  		},
-  		()=> {
-  			console.log("done!");
   		})
   	}
 

@@ -17,12 +17,10 @@ export class Service4Component implements OnInit {
   	this.service4Data();
   }
   english(){
-    console.log("English");
    localStorage.setItem('lang',JSON.stringify('en'));
    this.service4Data();
   }
   spanish(){
-    console.log("English");
    localStorage.setItem('lang',JSON.stringify('es'));
    this.service4Data();
   }
@@ -35,9 +33,6 @@ export class Service4Component implements OnInit {
   		},
   		err =>{
   			console.log(err,"err")
-  		},
-  		()=> {
-  			console.log("done!");
   		})
   }
 

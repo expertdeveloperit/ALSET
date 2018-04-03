@@ -49,17 +49,16 @@
 }
     /*==================Label===========================*/
 .bat-wrapper {
-    font-size: 23px;
     font-weight: 600;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     display: inline-block;
     position: fixed;
-    right: -69px;
-    top: 357px;
+    right: -59px;
+    bottom: 77px;
 }
 .bat-wrapper label {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 600;
     padding: 0px 5px;
     cursor: pointer;
@@ -74,12 +73,15 @@
     bottom: 0;
     z-index: -1;
 }
+@media only screen and (max-width: 1200px) {    
+    #myVideo {
+      width: auto;
+          height: 100%;
+    }
+}
 @media (max-width: 992px) { 
     .right-img-section {
         text-align: center;
-    }
-    #myVideo {
-        width: auto;
     }
 }
 @media (max-width: 767px) {

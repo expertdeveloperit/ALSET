@@ -317,6 +317,9 @@ a.article, a.article:hover {
     #sidebar ul {
         margin-top: 80px;
     }
+    .screen2-wrapper .contact-wrapper-2{
+        display: none;
+    }
 }
 @media (max-width: 640px) {
    .count .contact-wrapper-2 ul {

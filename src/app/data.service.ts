@@ -18,7 +18,6 @@ export class DataService {
 
   about(){
     this.language = JSON.parse(localStorage.getItem('lang'));
-    console.log(this.language,"lang");
     if(this.language == "en"){
          return this.http.get('https://alsetmx-fx.azurewebsites.net/api/About?code=aSHUQIf6aIcYisxgaGvlRNY1bdc5kfRgBd/ljaDXTnIfcBaXJAvDVA==&lang=en')
      }
@@ -29,7 +28,6 @@ export class DataService {
 
   services(){
     this.language = JSON.parse(localStorage.getItem('lang'));
-    console.log(this.language,"lang");
     if(this.language == "en"){
   	  return this.http.get('https://alsetmx-fx.azurewebsites.net/api/Services?code=ATlbamDt0LHrHxN4skLPhOJmja1uuIgO32L8//XuWdHbJ2wgydTcLg==&lang=en');
     }
@@ -40,7 +38,6 @@ export class DataService {
 
   consultancy(){
     this.language = JSON.parse(localStorage.getItem('lang'));
-    console.log(this.language,"lang");
     if(this.language == "en"){
       return this.http.get('https://alsetmx-fx.azurewebsites.net/api/Consultancy?code=bb5mzyOUgjsd4BHeKtEEMmU7zojQGiTleMiQdPMoKRdJmUH0CzBzAg==&lang=en');
     }
@@ -51,7 +48,6 @@ export class DataService {
 
   contact(){
     this.language = JSON.parse(localStorage.getItem('lang'));
-    console.log(this.language,"lang");
     if(this.language == "en"){
   	  return this.http.get('https://alsetmx-fx.azurewebsites.net/api/Contact?code=1pQX2EDlbJ/UZ9FmCgFVodABaNnS1nWQUtZZrBg5MMaXQs7edj30pw==&lang=en');
     }

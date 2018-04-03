@@ -17,27 +17,19 @@ export class Service2Component implements OnInit {
   	this.service2Data();
   }
   english(){
-    console.log("English");
    localStorage.setItem('lang',JSON.stringify('en'));
    this.service2Data();
   }
   spanish(){
-    console.log("English");
    localStorage.setItem('lang',JSON.stringify('es'));
    this.service2Data();
   }
   service2Data(){
   	this.service.services().subscribe( data=> {
-  			
   			this.para2 = data[2].Description;
-  			
-  			 			
   		},
   		err =>{
   			console.log(err,"err")
-  		},
-  		()=> {
-  			console.log("done!");
   		})
   }
 

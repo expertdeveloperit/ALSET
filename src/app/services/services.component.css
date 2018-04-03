@@ -88,17 +88,15 @@
 }
     /*==================Label===========================*/
 .bat-wrapper {
-    font-size: 23px;
-    font-weight: 600;
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg);
     display: inline-block;
     position: fixed;
-    right: -69px;
-    top: 357px;
+    right: -59px;
+    bottom: 77px;
 }
 .bat-wrapper label {
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 600;
     padding: 0px 5px;
     cursor: pointer;

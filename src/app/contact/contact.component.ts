@@ -36,9 +36,6 @@ export class ContactComponent implements OnInit {
        },
       err =>{
         console.log(err,"err")
-      },
-      ()=> {
-        console.log("done!");
       })
     }
 

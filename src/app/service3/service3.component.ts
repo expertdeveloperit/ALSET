@@ -17,12 +17,10 @@ export class Service3Component implements OnInit {
   	this.service3Data();
   }
   english(){
-    console.log("English");
    localStorage.setItem('lang',JSON.stringify('en'));
    this.service3Data();
   }
   spanish(){
-    console.log("English");
    localStorage.setItem('lang',JSON.stringify('es'));
    this.service3Data();
   }
@@ -35,9 +33,6 @@ export class Service3Component implements OnInit {
   		},
   		err =>{
   			console.log(err,"err")
-  		},
-  		()=> {
-  			console.log("done!");
   		})
   }
 

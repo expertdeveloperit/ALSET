@@ -211,7 +211,7 @@ a.article, a.article:hover {
 
 footer {
     text-align: center;
-    margin-top:61px;
+    margin-top:81px;
 }
 
 
@@ -238,12 +238,22 @@ footer {
         right: 0;
     }
 }
+@media only screen and (max-width: 1200px) {    
+    #myVideo {
+      width: auto;
+        height: 100%;
+    }
+    footer {
+        position: fixed;
+    left: 20px;
+    right: 20px;
+    margin: auto;
+    bottom: 0;
+    }
+}
 @media (max-width: 992px) {
     .contact-wrapper{
           width: 544px;
-    }
-    #myVideo {
-        width: auto;
     }
     .contact-wrapper ul {
         padding: 0;
