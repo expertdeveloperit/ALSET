@@ -32,6 +32,7 @@ a, a:hover, a:focus {
     position: fixed;
     right: 30px;
     top: 33px;
+    z-index: 999;
 }
 
 .line {
@@ -165,6 +166,7 @@ a.article, a.article:hover {
     position: fixed;
     right: -9px;
     top: 204px;
+    z-index: 1;
 }
 #myVideo {
     position: fixed;
@@ -263,6 +265,11 @@ a.article, a.article:hover {
       width: auto;
     }
 }
+@media only screen and (max-width: 1024px) and (min-width: 800px)  {
+    .chat {
+        top: 134px;
+    }
+}
 @media (max-width:1024px) { 
     .contact-wrapper-2 {
         width: 625px;
@@ -270,6 +277,7 @@ a.article, a.article:hover {
     .count .contact-wrapper-2 li {
         margin: 0 10px 10px 0;
     }
+    
 }
 @media (max-width:900px) {
     .contact-wrapper-2 {

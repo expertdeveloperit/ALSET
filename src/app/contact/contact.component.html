@@ -1,23 +1,20 @@
-<div class="wrapper">
-  <!-- Page Content Holder -->
+<div class="wrapper shapes-wrapper">
+<div class="shapes-right-wrapper"></div>
     <div id="content">
-        <!-- Header -->
+        <!--Page Header -->
         <app-header></app-header>
         <div class="bat-wrapper">
             <label class=" en" (click)="english()">English</label>
             <label class=" sp" (click)="spanish()">Spanish</label>
         </div>
 
-        <!-- content for contact page -->
-        
+        <!-- Page Content Holder -->
         <div class="content1">
         <div class="container acerca contact-acerca">
           <div class="col-xs-12 col-md-6">
             <div class="screen-2" [innerHTML] = "contact"></div>
           </div>
-
-                <!-- Contact Form -->
-
+          <!-- Cotact Form -->
           <div class="col-xs-12 col-md-6 text-right right-img-contact">
                     <form class="form-horizontal"
                    #contactForm = "ngForm" (ngSubmit) = "contactus(contactForm.value);contactForm.reset()" ngNativeValidate>
@@ -37,9 +34,7 @@
           </div>
         </div>
       </div>
-
-        <!-- Footer Area -->
-
+      <!--Page Footer -->
       <footer>
             <img src="../assets/images/footer-1.png">
         </footer>
@@ -48,6 +43,6 @@
     <video autoplay muted loop id="myVideo">
       <source src="./assets/video/video.mp4" type="video/mp4">
     </video>
-
+    <!--Page Sidebar -->
     <app-sidebar class="sidebar-wrapper"></app-sidebar>
 </div>

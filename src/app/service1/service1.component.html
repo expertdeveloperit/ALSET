@@ -1,6 +1,7 @@
-<div class="wrapper">
-	<!-- Page Content Holder -->
+<div class="wrapper shapes-wrapper">
+<div class="shapes-right-wrapper"></div>
     <div id="content">
+    	<!--Page Header -->
         <app-header></app-header>
         <div class="bat-wrapper">
             <label class=" en" (click)="english()">English</label>
@@ -19,9 +20,11 @@
 	    			</li>
 	    		</ul>
 	    	</div>
+	    	<!--Page Content Holder-->
     		<div class="col-xs-12 col-md-4 acerca">
     			<p>{{para1}}</p>	
     		</div>
+    		<!-- Other services links -->
     		<div class="col-xs-12 col-md-4 acerca text-center right-img-section">
     			<img  src="../assets/images/service2.png">
 	    	</div>
@@ -39,12 +42,13 @@
 	    			</li>
 	    			<li>
 	    				<a routerLink="/service4">
-	    					<img src="../assets/images/sidefooter-(3).png">
+	    					<img src="../assets/images/sidefooter(5).png">
 	    				</a>
 	    			</li>
 	    		</ul>
 	    	</div>
 	    </div>
+	    <!-- Page Footer -->
 	     <div class="mobile-footer">
 	    	<ul class="footer-right">
     			<li>
@@ -74,9 +78,10 @@
 	    </div>
     </div>
     <img class="header-img" src="../assets/images/menu-2.png">
+    <!-- Page Video -->
      <video autoplay muted loop id="myVideo">
         <source src="./assets/video/video.mp4" type="video/mp4">
     </video>
-
+    <!-- Page Sidebar -->
     <app-sidebar class="sidebar-wrapper"></app-sidebar>
 </div>
